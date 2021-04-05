@@ -13,7 +13,7 @@
 .header__img {
   width: 100%;
 }
-.more {
+.header__more {
   font-family: fantasy, cursive;
 }
 
@@ -34,7 +34,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.row {
+.main__row {
   display: flex;
 }
 .incomplete-tasks,
@@ -65,7 +65,7 @@
 }
 /* Heading */
 .name,
-.new-task-label {
+.main__new-task-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -91,11 +91,11 @@
 }
 
 /* New Task */
-.new-task-label {
+.main__new-task-label {
   display: block;
   margin: 0 0 20px;
 }
-.row > .input-text {
+.main__row > .input-text {
   width: 318px;
 }
 
@@ -138,7 +138,7 @@
 }
 
 /* Completed */
-.completed-label {
+.completed-tasks__item .label {
   text-decoration: line-through;
   color: #888;
 }

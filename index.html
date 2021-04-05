@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+      <a class="header__more" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main">
+      <section>
+      <label class="main__new-task-label label" for="new-task">Add Item</label>
+      <div class="main__row">
+        <input id="new-task" class="input input-text task" type="text">
+        <button class="button">Add</button>
+      </div>
+    </section>
+      <h3 class="name">Todo</h3>
+      <ul class="incomplete-tasks">
+        <li class="incompleted-tasks__item">
+          <input class="input checkbox" type="checkbox">
+          <label class="label task">Pay Bills</label>
+          <input class="input input-text task" type="text" class="task">
+          <button class="button edit">Edit</button>
+          <button class="button delete">
+            <img class="delete-button" src="./remove.svg" alt="remove-button">
+          </button>
+        </li>
+        <li class="edit-mode incompleted-tasks__item">
+          <input class="input checkbox" type="checkbox">
+          <label class="label task">Go Shopping</label>
+          <input class="input input-text task" type="text" value="Go Shopping" class="task">
+          <button class="button edit">Save</button>
+          <button class="button delete">
+            <img class="delete-button" src="./remove.svg" alt="remove-button">
+          </button>
+        </li>
+      </ul>
+      <h3 class="name">Completed</h3>
+      <ul class="completed-tasks">
+        <li class="completed-tasks__item">
+          <input class="input checkbox" type="checkbox" checked>
+          <label class="completed-label task label">See the Doctor</label>
+          <input class="input input-text" type="text" class="task">
+          <button class="button edit">Edit</button>
+          <button class="button delete">
+            <img class="delete-button" src="./remove.svg" alt="remove-button">
+          </button>
+        </li>
+      </ul>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
